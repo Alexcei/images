@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bpole/CLionProjects/my_visial_liller/filler_visual.h
+ft_printf/ft_printf.h
+/Users/bpole/CLionProjects/my_visial_liller/ft_printf/ft_printf.h
+mlx.h
+-
+math.h
+-
+
+/Users/bpole/CLionProjects/my_visial_liller/ft_printf/ft_printf.h
+stdarg.h
+-
+libft/libft.h
+/Users/bpole/CLionProjects/my_visial_liller/ft_printf/libft/libft.h
+
+/Users/bpole/CLionProjects/my_visial_liller/ft_printf/libft/libft.h
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+fcntl.h
+/Users/bpole/CLionProjects/my_visial_liller/ft_printf/libft/fcntl.h
+
+/Users/bpole/CLionProjects/my_visial_liller/main.c
+filler_visual.h
+/Users/bpole/CLionProjects/my_visial_liller/filler_visual.h
+
