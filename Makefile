@@ -6,11 +6,11 @@
 #    By: bpole <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/11 10:08:31 by bpole             #+#    #+#              #
-#    Updated: 2019/12/05 13:43:46 by bpole            ###   ########.fr        #
+#    Updated: 2019/12/06 00:28:49 by bpole            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = fdf
+NAME = visual_fil
 
 LIB_DIR = ./ft_printf/
 LIB_DIR_X = ./minilibx_macos/
@@ -19,7 +19,7 @@ LIBFT = $(LIB_DIR)libftprintf.a
 LIBFT_X = $(LIB_DIR_X)libmlx.a
 
 SRC = main.c utils.c render.c bresenham.c control.c \
-transform.c read_map.c read_fight.c read_fight_piece.c double_split.c
+transform.c read_fight.c double_split.c head_map.c
 
 OBJ = $(SRC:.c=.o)
 

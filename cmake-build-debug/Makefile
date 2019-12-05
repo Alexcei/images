@@ -2256,6 +2256,33 @@ ft_printf/parser.c.s:
 	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/ft_printf/parser.c.s
 .PHONY : ft_printf/parser.c.s
 
+head_map.o: head_map.c.o
+
+.PHONY : head_map.o
+
+# target to build an object file
+head_map.c.o:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/head_map.c.o
+.PHONY : head_map.c.o
+
+head_map.i: head_map.c.i
+
+.PHONY : head_map.i
+
+# target to preprocess a source file
+head_map.c.i:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/head_map.c.i
+.PHONY : head_map.c.i
+
+head_map.s: head_map.c.s
+
+.PHONY : head_map.s
+
+# target to generate assembly for a file
+head_map.c.s:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/head_map.c.s
+.PHONY : head_map.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -2309,33 +2336,6 @@ read_fight.s: read_fight.c.s
 read_fight.c.s:
 	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_fight.c.s
 .PHONY : read_fight.c.s
-
-read_fight_piece.o: read_fight_piece.c.o
-
-.PHONY : read_fight_piece.o
-
-# target to build an object file
-read_fight_piece.c.o:
-	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_fight_piece.c.o
-.PHONY : read_fight_piece.c.o
-
-read_fight_piece.i: read_fight_piece.c.i
-
-.PHONY : read_fight_piece.i
-
-# target to preprocess a source file
-read_fight_piece.c.i:
-	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_fight_piece.c.i
-.PHONY : read_fight_piece.c.i
-
-read_fight_piece.s: read_fight_piece.c.s
-
-.PHONY : read_fight_piece.s
-
-# target to generate assembly for a file
-read_fight_piece.c.s:
-	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_fight_piece.c.s
-.PHONY : read_fight_piece.c.s
 
 read_map.o: read_map.c.o
 
@@ -2691,15 +2691,15 @@ help:
 	@echo "... ft_printf/parser.o"
 	@echo "... ft_printf/parser.i"
 	@echo "... ft_printf/parser.s"
+	@echo "... head_map.o"
+	@echo "... head_map.i"
+	@echo "... head_map.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... read_fight.o"
 	@echo "... read_fight.i"
 	@echo "... read_fight.s"
-	@echo "... read_fight_piece.o"
-	@echo "... read_fight_piece.i"
-	@echo "... read_fight_piece.s"
 	@echo "... read_map.o"
 	@echo "... read_map.i"
 	@echo "... read_map.s"

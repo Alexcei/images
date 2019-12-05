@@ -36,15 +36,15 @@ static int 		creat_plateau(t_fil *fil, int i)
 	return (1);
 }
 
-void	ft_read_fil(t_fil *fil)
+int			ft_read_fil(t_fil *fil)
 {
 	int 	i;
 
-	get_next_line(0, &fil->line);
+	get_next_line(fil->fd, &fil->line);
 	if (!fil->line)
 		print_error(fil, "error_read_fight");
 	if (!ft_strnequ(fil->line, "Plateau", 7))
-		return ;
+		return (0);
 	if (!get_coord_plat(fil))
 		print_error(fil, "error_read_plateau");
 	ft_strdel(&fil->line);
@@ -53,10 +53,11 @@ void	ft_read_fil(t_fil *fil)
 	i = 0;
 	while (i < fil->h_plat + 1)
 	{
-		get_next_line(0, &fil->line);
+		get_next_line(fil->fd, &fil->line);
 		if (!fil->line || !creat_plateau(fil, i))
 			print_error(fil, "error_read_plateau");
 		ft_strdel(&fil->line);
 		i++;
 	}
+	return (1);
 }

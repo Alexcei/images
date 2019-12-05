@@ -5,12 +5,16 @@
 #include <mlx.h>
 #include <math.h>
 
-# define HEIGHT			600//1080
-# define WIDTH			900//1920
+# define HEIGHT			1080
+# define WIDTH			1920
 # define SIZE 			HEIGHT * WIDTH
 
 # define TEXT_COLOR			0xEAEAEA
 # define BACKGROUND			0xA0B0C0
+
+# define RED			    0xFF0000
+# define BLUE			    0x0000FF
+# define WHITE 		   		0xFFFFFF
 
 # define FT_MIN(a, b) (a < b ? a : b)
 # define MAX(a, b) (a > b ? a : b)
@@ -113,6 +117,7 @@ typedef struct		s_data
 	t_mouse 		*mouse;
 	t_fil			*fil;
 	t_dot			*dot;
+	int 			max_i;
 	int				width;
 	int				height;
 	int 			size;
@@ -146,19 +151,16 @@ int					fdf_hook_keydown(int key, t_data *data);
 char				**ft_double_split(char const *s, char c1, char c2);
 
 /*
+**					head_map.c
+*/
+void				ft_put_players_on_heat_map(t_fil *fil);
+int					ft_creat_heat_map(t_fil *fil);
+int					ft_fill_heat_map(t_fil *fil, int i);
+
+/*
 **					read_figth.c
 */
-void				ft_read_fil(t_fil *fil);
-
-/*
-**					read_figth_piece.c
-*/
-void				ft_read_piece_fil(t_fil *fil);
-
-/*
-**					read_map.c
-*/
-int 				fdf_read_map(int fd, t_data *data);
+int					ft_read_fil(t_fil *fil);
 
 /*
 **					render.c

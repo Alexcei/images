@@ -326,6 +326,9 @@
 		<Unit filename="/Users/bpole/CLionProjects/my_visial_liller/ft_printf/parser.c">
 			<Option target="my_visial_liller"/>
 		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/my_visial_liller/head_map.c">
+			<Option target="my_visial_liller"/>
+		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_visial_liller/main.c">
 			<Option target="my_visial_liller"/>
 		</Unit>
@@ -333,9 +336,6 @@
 			<Option target="my_visial_liller"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_visial_liller/read_fight.c">
-			<Option target="my_visial_liller"/>
-		</Unit>
-		<Unit filename="/Users/bpole/CLionProjects/my_visial_liller/read_fight_piece.c">
 			<Option target="my_visial_liller"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_visial_liller/read_map.c">

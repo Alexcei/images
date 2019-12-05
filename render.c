@@ -35,7 +35,7 @@ static void		render_map(t_data *data)
 		init_dot_c_d(i, &dot_c, &dot_d, data);
 		if ((i + 1) % data->width != 0)
 		{
-			if (data->camera->polygon && i / data->width != data->height - 1)
+			if (dot_a.color && data->camera->polygon && i / data->width != data->height - 1)
 			{
 				render_plane(dot_a, dot_b, dot_c, data);
 				render_plane(dot_b, dot_c, dot_d, data);
