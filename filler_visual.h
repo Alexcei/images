@@ -118,6 +118,7 @@ typedef struct		s_data
 	t_fil			*fil;
 	t_dot			*dot;
 	int 			max_i;
+	int 			color_tmp;
 	int				width;
 	int				height;
 	int 			size;

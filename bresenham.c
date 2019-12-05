@@ -62,7 +62,7 @@ static void		render_line_plane(t_dot a, t_dot b, t_data *data)
 	y_step /= max;
 	while ((int)(a.x - b.x) || (int)(a.y - b.y))
 	{
-		paint_plane((int)a.x, (int)a.y, data, a.color);
+		paint_plane((int)a.x, (int)a.y, data, data->color_tmp);
 		a.x += x_step;
 		a.y += y_step;
 	}

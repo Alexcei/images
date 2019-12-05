@@ -187,7 +187,7 @@ int		main(void)
 
 	if (!fdf_init(&data, &camera, &fil))
 		print_error(&fil, "error: initialization");
-	//ata.fil->fd = open("t2", O_RDONLY);
+	data.fil->fd = open("t2", O_RDONLY);
 	read_player(&fil);
 	mlx_key_hook(data.win, fdf_hook_keydown, &data);
 	mlx_hook(data.win, 17, 0, fdf_close, &data);
