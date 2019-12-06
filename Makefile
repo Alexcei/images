@@ -18,8 +18,8 @@ LIB_DIR_X = ./minilibx_macos/
 LIBFT = $(LIB_DIR)libftprintf.a
 LIBFT_X = $(LIB_DIR_X)libmlx.a
 
-SRC = main.c utils.c render.c bresenham.c control.c \
-transform.c read_fight.c double_split.c head_map.c
+SRC = main.c utils.c render.c bresenham.c control.c transform.c read_fight.c \
+double_split.c head_map.c loop_key_hook.c mouse_press.c read_payer.c
 
 OBJ = $(SRC:.c=.o)
 

@@ -248,15 +248,30 @@ CMakeFiles/my_visial_liller.dir/head_map.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/my_visial_liller.dir/head_map.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/my_visial_liller.dir/head_map.c.o: ../head_map.c
 
+CMakeFiles/my_visial_liller.dir/loop_key_hook.c.o: ../filler_visual.h
+CMakeFiles/my_visial_liller.dir/loop_key_hook.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/my_visial_liller.dir/loop_key_hook.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/my_visial_liller.dir/loop_key_hook.c.o: ../loop_key_hook.c
+
 CMakeFiles/my_visial_liller.dir/main.c.o: ../filler_visual.h
 CMakeFiles/my_visial_liller.dir/main.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/my_visial_liller.dir/main.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/my_visial_liller.dir/main.c.o: ../main.c
 
+CMakeFiles/my_visial_liller.dir/mouse_press.c.o: ../filler_visual.h
+CMakeFiles/my_visial_liller.dir/mouse_press.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/my_visial_liller.dir/mouse_press.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/my_visial_liller.dir/mouse_press.c.o: ../mouse_press.c
+
 CMakeFiles/my_visial_liller.dir/read_fight.c.o: ../filler_visual.h
 CMakeFiles/my_visial_liller.dir/read_fight.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/my_visial_liller.dir/read_fight.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/my_visial_liller.dir/read_fight.c.o: ../read_fight.c
+
+CMakeFiles/my_visial_liller.dir/read_payer.c.o: ../filler_visual.h
+CMakeFiles/my_visial_liller.dir/read_payer.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/my_visial_liller.dir/read_payer.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/my_visial_liller.dir/read_payer.c.o: ../read_payer.c
 
 CMakeFiles/my_visial_liller.dir/render.c.o: ../filler_visual.h
 CMakeFiles/my_visial_liller.dir/render.c.o: ../ft_printf/ft_printf.h

@@ -2,16 +2,16 @@
 
 static void		paint_point(int x, int y, t_data *data, int color_default)
 {
-	int			color[4] = {0xFFFFFF, 0xFF0000, 0x00FF00, 0x0000FF};
 	int			i;
 
+	(void)color_default;
 	i = x + y * WIDTH;
 	if (0 < x && x < WIDTH && 0 < y && y < HEIGHT)
 	{
-		if (color_default)
-			((int *)(data->data_addr))[i] = color_default;
-		else
-			((int *)(data->data_addr))[i] = color[data->camera->color_selection];
+		//if (color_default)
+		//	((int *)(data->data_addr))[i] = color_default;
+		//else
+			((int *)(data->data_addr))[i] = FDF;
 	}
 }
 
@@ -36,16 +36,12 @@ void			render_line(t_dot a, t_dot b, t_data *data)
 
 static void		paint_plane(int x, int y, t_data *data, int color_default)
 {
-	int			color[4] = {0x999999, 0x990000, 0x009900, 0x000099};
 	int			i;
 
 	i = x + y * WIDTH;
 	if (0 < x && x < WIDTH && 0 < y && y < HEIGHT)
 	{
-		if (color_default)
-			((int *)(data->data_addr))[i] = color_default;
-		else
-			((int *)(data->data_addr))[i] = color[data->camera->color_selection];
+		((int *)(data->data_addr))[i] = color_default;
 	}
 }
 

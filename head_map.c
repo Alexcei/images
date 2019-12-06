@@ -5,7 +5,6 @@ void			ft_put_players_on_heat_map(t_fil *fil)
 	int			w;
 	int 		h;
 
-	fil->last_count_enemy = fil->count_enemy;
 	fil->count_enemy = 0;
 	h = 0;
 	while (h < fil->h_plat)

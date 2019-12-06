@@ -2283,6 +2283,33 @@ head_map.c.s:
 	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/head_map.c.s
 .PHONY : head_map.c.s
 
+loop_key_hook.o: loop_key_hook.c.o
+
+.PHONY : loop_key_hook.o
+
+# target to build an object file
+loop_key_hook.c.o:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/loop_key_hook.c.o
+.PHONY : loop_key_hook.c.o
+
+loop_key_hook.i: loop_key_hook.c.i
+
+.PHONY : loop_key_hook.i
+
+# target to preprocess a source file
+loop_key_hook.c.i:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/loop_key_hook.c.i
+.PHONY : loop_key_hook.c.i
+
+loop_key_hook.s: loop_key_hook.c.s
+
+.PHONY : loop_key_hook.s
+
+# target to generate assembly for a file
+loop_key_hook.c.s:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/loop_key_hook.c.s
+.PHONY : loop_key_hook.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -2310,6 +2337,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/main.c.s
 .PHONY : main.c.s
 
+mouse_press.o: mouse_press.c.o
+
+.PHONY : mouse_press.o
+
+# target to build an object file
+mouse_press.c.o:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/mouse_press.c.o
+.PHONY : mouse_press.c.o
+
+mouse_press.i: mouse_press.c.i
+
+.PHONY : mouse_press.i
+
+# target to preprocess a source file
+mouse_press.c.i:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/mouse_press.c.i
+.PHONY : mouse_press.c.i
+
+mouse_press.s: mouse_press.c.s
+
+.PHONY : mouse_press.s
+
+# target to generate assembly for a file
+mouse_press.c.s:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/mouse_press.c.s
+.PHONY : mouse_press.c.s
+
 read_fight.o: read_fight.c.o
 
 .PHONY : read_fight.o
@@ -2336,6 +2390,33 @@ read_fight.s: read_fight.c.s
 read_fight.c.s:
 	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_fight.c.s
 .PHONY : read_fight.c.s
+
+read_payer.o: read_payer.c.o
+
+.PHONY : read_payer.o
+
+# target to build an object file
+read_payer.c.o:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_payer.c.o
+.PHONY : read_payer.c.o
+
+read_payer.i: read_payer.c.i
+
+.PHONY : read_payer.i
+
+# target to preprocess a source file
+read_payer.c.i:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_payer.c.i
+.PHONY : read_payer.c.i
+
+read_payer.s: read_payer.c.s
+
+.PHONY : read_payer.s
+
+# target to generate assembly for a file
+read_payer.c.s:
+	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_payer.c.s
+.PHONY : read_payer.c.s
 
 render.o: render.c.o
 
@@ -2667,12 +2748,21 @@ help:
 	@echo "... head_map.o"
 	@echo "... head_map.i"
 	@echo "... head_map.s"
+	@echo "... loop_key_hook.o"
+	@echo "... loop_key_hook.i"
+	@echo "... loop_key_hook.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mouse_press.o"
+	@echo "... mouse_press.i"
+	@echo "... mouse_press.s"
 	@echo "... read_fight.o"
 	@echo "... read_fight.i"
 	@echo "... read_fight.s"
+	@echo "... read_payer.o"
+	@echo "... read_payer.i"
+	@echo "... read_payer.s"
 	@echo "... render.o"
 	@echo "... render.i"
 	@echo "... render.s"

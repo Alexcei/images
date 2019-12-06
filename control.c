@@ -1,29 +1,5 @@
 #include "filler_visual.h"
 
-static void		color_up(t_data *data)
-{
-	if (data->camera->color_selection < 3)
-		data->camera->color_selection++;
-	else
-		data->camera->color_selection = 0;
-}
-
-static void		view_up(t_data *data)
-{
-	if (data->camera->view_selection < 2)
-		data->camera->view_selection++;
-	else
-		data->camera->view_selection = 0;
-}
-
-static void		polygon_up(t_data *data)
-{
-	if (!data->camera->polygon)
-		data->camera->polygon++;
-	else
-		data->camera->polygon--;
-}
-
 static void		zoom_down(t_data *data)
 {
 	data->camera->zoom  -= 1;
@@ -47,19 +23,23 @@ static void		heat_up(t_data *data)
 		data->head = 0;
 }
 
+static void		polygon_up(t_data *data)
+{
+	if (!data->camera->polygon)
+		data->camera->polygon++;
+	else
+		data->camera->polygon--;
+}
+
 int				fdf_hook_keydown(int key, t_data *data)
 {
 	if (key == MAIN_PAD_ESC)
 		exit(EXIT_SUCCESS);
-	if (key == 0)
+	if (key == MAIN_PAD_P)
 		put_pause(data);
-	if (key == MAIN_PAD_C)
-		color_up(data);
 	if (key == MAIN_PAD_H)
 		heat_up(data);
-	if (key == MAIN_PAD_V)
-		view_up(data);
-	if (key == MAIN_PAD_P)
+	if (key == MAIN_PAD_G)
 		polygon_up(data);
 	if (key == NUM_PAD_MINUS)
 		zoom_down(data);

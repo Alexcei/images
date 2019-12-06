@@ -50,25 +50,18 @@ static void		render_map(t_data *data)
 
 static void		render_menu(t_data *data)
 {
-	char *projection[3] = {"ISO", "TOP", "3D"};
-	char *color[4] = {"WHITE", "RED", "GREEN", "BLUE"};
-
-	mlx_string_put(data->mlx, data->win, 65, 20,
-				   TEXT_COLOR, "MENU_EPTA");
+	mlx_string_put(data->mlx, data->win, 85, 20,
+				   TEXT_COLOR, "MENU");
 	mlx_string_put(data->mlx, data->win, 65, 40,
-				   TEXT_COLOR, "Change projection - \"V\"");
+				   TEXT_COLOR, "Zoom - Scroll mouse");
 	mlx_string_put(data->mlx, data->win, 65, 60,
-				   TEXT_COLOR, "Current projection - ");
-	mlx_string_put(data->mlx, data->win, 270, 60,
-				   TEXT_COLOR, projection[data->camera->view_selection]);
+				   TEXT_COLOR, "Rotate - Press left mouse and move");
 	mlx_string_put(data->mlx, data->win, 65, 80,
-				   TEXT_COLOR, "Change color - \"C\"");
+				   TEXT_COLOR, "Move - Press right mouse and move");
 	mlx_string_put(data->mlx, data->win, 65, 100,
-				   TEXT_COLOR, "Current color - ");
-	mlx_string_put(data->mlx, data->win, 220, 100,
-				   TEXT_COLOR, color[data->camera->color_selection]);
+				   TEXT_COLOR, "Reset view - Press wheel mouse");
 	mlx_string_put(data->mlx, data->win, 65, 120,
-				   TEXT_COLOR, "Zoom - \"+\" | \"-\"");
+				   TEXT_COLOR, "Pause - \"P\"");
 }
 
 void			fdf_render(t_data *data)
