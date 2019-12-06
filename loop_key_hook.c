@@ -10,8 +10,6 @@ static void		free_all_fil(t_fil *fil)
 
 static void		set_dot(t_data *data, int height, int wigth)
 {
-	data->fil->score_one = 0;
-	data->fil->score_two = 0;
 	data->dot[height * data->width + wigth].z = - data->fil->map[height][wigth];
 	data->dot[height * data->width + wigth].x = (double)wigth;
 	data->dot[height * data->width + wigth].y = (double)height;
@@ -21,7 +19,7 @@ static void		set_dot(t_data *data, int height, int wigth)
 		data->dot[height * data->width + wigth].color = PLAYER1;
 	else if ((data->fil->plat[height][wigth] == 'o' ||
 			data->fil->plat[height][wigth] == 'O') &&
-			++data->fil->score_one)
+			++data->fil->score_two)
 		data->dot[height * data->width + wigth].color = PLAYER2;
 	else
 		data->dot[height * data->width + wigth].color = 0;
@@ -38,6 +36,8 @@ void			ft_creat_fdf(t_data *data)
 		data->camera->zoom = FT_MIN(WIDTH / data->width / 2, HEIGHT / data->height / 2);
 	data->size = data->width * data->height;
 	data->dot = (t_dot*)ft_memalloc(sizeof(t_dot) * data->size);
+	data->fil->score_one = 0;
+	data->fil->score_two = 0;
 	height = 0;
 	while (height < data->height)
 	{
@@ -66,29 +66,39 @@ static void		ft_creat_image(t_data *data)
 
 void		print_score(t_data *data)
 {
-	char	*str;
-	int 	len;
+	int 	len_one;
+	int 	len_two;
 
-	len = ft_strlen(data->fil->play_one);
-	str = "&";
-	mlx_string_put(data->mlx, data->win, (WIDTH / 2) - 10, (HEIGHT / 8),
-				   0x0FFFFFF, data->fil->play_one);
-	mlx_string_put(data->mlx, data->win, (WIDTH / 2) - 10 + 5 + len * 10, (HEIGHT / 8),
-				   0x0FFFFFF, str);
-	mlx_string_put(data->mlx, data->win, (WIDTH / 2) - 10 + 20 + len * 10, (HEIGHT / 8),
-				   0x0FFFFFF, data->fil->play_two);
+	len_one = ft_strlen(data->fil->play_one);
+	len_two = ft_strlen(data->fil->play_two);
+	mlx_string_put(data->mlx, data->win, (WIDTH / 2) - len_one * 10 - 110, (HEIGHT / 8),
+				   0x0FFFFFF, ft_itoa(data->fil->score_one));
+	mlx_string_put(data->mlx, data->win, (WIDTH / 2) - len_one * 10 - 50, (HEIGHT / 8),
+				   PLAYER1, data->fil->play_one);
+	mlx_string_put(data->mlx, data->win, (WIDTH / 2) - 30, (HEIGHT / 8),
+				   0x0FFFFFF, "&");
+	mlx_string_put(data->mlx, data->win, (WIDTH / 2) , (HEIGHT / 8),
+				   PLAYER2, data->fil->play_two);
+	mlx_string_put(data->mlx, data->win, (WIDTH / 2) + len_two * 10 + 20, (HEIGHT / 8),
+				   0x0FFFFFF, ft_itoa(data->fil->score_two));
 }
 
 void		print_final(t_data *data)
 {
 	char	*str;
-	int 	len;
+	int 	len_one;
+	int 	len_two;
 
-	len = ft_strlen(data->fil->play_one);
+	len_one = ft_strlen(data->fil->play_one);
+	len_two = ft_strlen(data->fil->play_two);
 	str = "IS WIN";
-	mlx_string_put(data->mlx, data->win, (WIDTH / 2) - 10, (HEIGHT / 8) + 20,
-				   0x0FFFFFF, data->fil->play_one);
-	mlx_string_put(data->mlx, data->win, (WIDTH / 2) - 10 + 5 + len * 10, (HEIGHT / 8) + 20,
+	if (data->fil->score_one > data->fil->score_two)
+		mlx_string_put(data->mlx, data->win, (WIDTH / 2) - 60 - len_one * 10,
+				(HEIGHT / 8) + 30, PLAYER1, data->fil->play_one);
+	else
+		mlx_string_put(data->mlx, data->win, (WIDTH / 2) - 60 - len_two * 10,
+							   (HEIGHT / 8) + 30, PLAYER2, data->fil->play_two);
+	mlx_string_put(data->mlx, data->win, (WIDTH / 2) - 50, (HEIGHT / 8) + 30,
 				   0x0FFFFFF, str);
 }
 
@@ -108,6 +118,7 @@ int				fdf_loop_key_hook(t_data *data)
 		}
 	}
 	fdf_render(data);
+	sleep(10);
 	print_score(data);
 	if (data->pause == 1)
 	{

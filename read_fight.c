@@ -36,29 +36,38 @@ static int 		creat_plateau(t_fil *fil, int i)
 	return (1);
 }
 
-int			ft_read_fil(t_fil *fil)
+static void		read_plateau(t_fil *fil)
 {
 	int 	i;
 
-	if (get_next_line(fil->fd, &fil->line) <= 0)
-		print_error(fil, "read_end");
-	if (!fil->line)
-		print_error(fil, "error_read_fight");
-	if (!ft_strnequ(fil->line, "Plateau", 7))
-		return (0);
-	if (!get_coord_plat(fil))
-		print_error(fil, "error_read_plateau");
-	ft_strdel(&fil->line);
-	if (!(fil->plat = (char **) ft_memalloc(sizeof(char *) * (fil->h_plat + 1))))
-		print_error(fil, "error_malloc_read_plateau");
 	i = 0;
 	while (i < fil->h_plat + 1)
 	{
-		get_next_line(fil->fd, &fil->line);
+		if (get_next_line(fil->fd, &fil->line) <= 0)
+			print_error(fil, "read_end");
 		if (!fil->line || !creat_plateau(fil, i))
 			print_error(fil, "error_read_plateau");
 		ft_strdel(&fil->line);
 		i++;
 	}
+}
+
+int			ft_read_fil(t_fil *fil)
+{
+	if (get_next_line(fil->fd, &fil->line) <= 0)
+		print_error(fil, "read_end");
+	if (!fil->line)
+		print_error(fil, "error_read_fight");
+	if (!ft_strnequ(fil->line, "Plateau", 7))
+	{
+		ft_strdel(&fil->line);
+		return (0);
+	}
+	if (!get_coord_plat(fil))
+		print_error(fil, "error_read_plateau");
+	ft_strdel(&fil->line);
+	if (!(fil->plat = (char **) ft_memalloc(sizeof(char *) * (fil->h_plat + 1))))
+		print_error(fil, "error_malloc_read_plateau");
+	read_plateau(fil);
 	return (1);
 }
