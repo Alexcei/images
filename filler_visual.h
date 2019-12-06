@@ -21,6 +21,7 @@
 # define MOD(a) (a < 0 ? -a : a)
 
 # define MOUSE_LEFT_BUTTON	1
+# define MOUSE_RIGTH_BUTTON	2
 # define MOUSE_SCROLL_UP	4
 # define MOUSE_SCROLL_DOWN	5
 
@@ -33,7 +34,7 @@
 # define NUM_PAD_MINUS		78
 
 # define MAIN_PAD_ESC		53
-# define MAIN_PAD_I			34
+# define MAIN_PAD_H			4
 # define MAIN_PAD_P			35
 # define MAIN_PAD_PLUS		24
 # define MAIN_PAD_MINUS		27
@@ -53,7 +54,8 @@ typedef enum
 
 typedef struct		s_mouse
 {
-	char			is_pressed;
+	char			put_left;
+	char			put_right;
 	int				x;
 	int				y;
 	int				previous_x;
@@ -117,6 +119,7 @@ typedef struct		s_data
 	t_mouse 		*mouse;
 	t_fil			*fil;
 	t_dot			*dot;
+	int 			head;
 	int 			max_i;
 	int 			color_tmp;
 	int				width;
@@ -179,11 +182,9 @@ t_dot				transformations(t_dot dot, t_data *data);
 void				print_error(t_fil *fil, char *message);
 void				ft_free_char_arr(char ***arr);
 int					ft_word_count(char const *str, char c);
-int					ft_atoi_base(const char *str, int base);
 
 
 void				ft_free_int_arr(int ***arr, int h);
 int					ft_is_enemy_fil(t_fil *fil, char c);
-int					ft_is_i_fil(t_fil *fil, char c);
 
 #endif

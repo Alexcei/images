@@ -258,11 +258,6 @@ CMakeFiles/my_visial_liller.dir/read_fight.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/my_visial_liller.dir/read_fight.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/my_visial_liller.dir/read_fight.c.o: ../read_fight.c
 
-CMakeFiles/my_visial_liller.dir/read_map.c.o: ../filler_visual.h
-CMakeFiles/my_visial_liller.dir/read_map.c.o: ../ft_printf/ft_printf.h
-CMakeFiles/my_visial_liller.dir/read_map.c.o: ../ft_printf/libft/libft.h
-CMakeFiles/my_visial_liller.dir/read_map.c.o: ../read_map.c
-
 CMakeFiles/my_visial_liller.dir/render.c.o: ../filler_visual.h
 CMakeFiles/my_visial_liller.dir/render.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/my_visial_liller.dir/render.c.o: ../ft_printf/libft/libft.h

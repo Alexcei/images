@@ -86,7 +86,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bpole/CLionProjects/my_visial_liller/head_map.c" "/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles/my_visial_liller.dir/head_map.c.o"
   "/Users/bpole/CLionProjects/my_visial_liller/main.c" "/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles/my_visial_liller.dir/main.c.o"
   "/Users/bpole/CLionProjects/my_visial_liller/read_fight.c" "/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles/my_visial_liller.dir/read_fight.c.o"
-  "/Users/bpole/CLionProjects/my_visial_liller/read_map.c" "/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles/my_visial_liller.dir/read_map.c.o"
   "/Users/bpole/CLionProjects/my_visial_liller/render.c" "/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles/my_visial_liller.dir/render.c.o"
   "/Users/bpole/CLionProjects/my_visial_liller/transform.c" "/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles/my_visial_liller.dir/transform.c.o"
   "/Users/bpole/CLionProjects/my_visial_liller/utils.c" "/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles/my_visial_liller.dir/utils.c.o"

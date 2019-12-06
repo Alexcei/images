@@ -338,9 +338,6 @@
 		<Unit filename="/Users/bpole/CLionProjects/my_visial_liller/read_fight.c">
 			<Option target="my_visial_liller"/>
 		</Unit>
-		<Unit filename="/Users/bpole/CLionProjects/my_visial_liller/read_map.c">
-			<Option target="my_visial_liller"/>
-		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/my_visial_liller/render.c">
 			<Option target="my_visial_liller"/>
 		</Unit>

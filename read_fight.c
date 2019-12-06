@@ -40,7 +40,8 @@ int			ft_read_fil(t_fil *fil)
 {
 	int 	i;
 
-	get_next_line(fil->fd, &fil->line);
+	if (get_next_line(fil->fd, &fil->line) <= 0)
+		print_error(fil, "read_end");
 	if (!fil->line)
 		print_error(fil, "error_read_fight");
 	if (!ft_strnequ(fil->line, "Plateau", 7))

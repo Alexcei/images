@@ -81,7 +81,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_visial_liller.dir/head_map.c.o"
   "CMakeFiles/my_visial_liller.dir/main.c.o"
   "CMakeFiles/my_visial_liller.dir/read_fight.c.o"
-  "CMakeFiles/my_visial_liller.dir/read_map.c.o"
   "CMakeFiles/my_visial_liller.dir/render.c.o"
   "CMakeFiles/my_visial_liller.dir/transform.c.o"
   "CMakeFiles/my_visial_liller.dir/utils.c.o"

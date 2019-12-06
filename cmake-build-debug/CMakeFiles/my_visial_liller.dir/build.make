@@ -1123,22 +1123,9 @@ CMakeFiles/my_visial_liller.dir/read_fight.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_visial_liller.dir/read_fight.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/my_visial_liller/read_fight.c -o CMakeFiles/my_visial_liller.dir/read_fight.c.s
 
-CMakeFiles/my_visial_liller.dir/read_map.c.o: CMakeFiles/my_visial_liller.dir/flags.make
-CMakeFiles/my_visial_liller.dir/read_map.c.o: ../read_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/my_visial_liller.dir/read_map.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_visial_liller.dir/read_map.c.o   -c /Users/bpole/CLionProjects/my_visial_liller/read_map.c
-
-CMakeFiles/my_visial_liller.dir/read_map.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_visial_liller.dir/read_map.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bpole/CLionProjects/my_visial_liller/read_map.c > CMakeFiles/my_visial_liller.dir/read_map.c.i
-
-CMakeFiles/my_visial_liller.dir/read_map.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_visial_liller.dir/read_map.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/my_visial_liller/read_map.c -o CMakeFiles/my_visial_liller.dir/read_map.c.s
-
 CMakeFiles/my_visial_liller.dir/render.c.o: CMakeFiles/my_visial_liller.dir/flags.make
 CMakeFiles/my_visial_liller.dir/render.c.o: ../render.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/my_visial_liller.dir/render.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/my_visial_liller.dir/render.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_visial_liller.dir/render.c.o   -c /Users/bpole/CLionProjects/my_visial_liller/render.c
 
 CMakeFiles/my_visial_liller.dir/render.c.i: cmake_force
@@ -1151,7 +1138,7 @@ CMakeFiles/my_visial_liller.dir/render.c.s: cmake_force
 
 CMakeFiles/my_visial_liller.dir/transform.c.o: CMakeFiles/my_visial_liller.dir/flags.make
 CMakeFiles/my_visial_liller.dir/transform.c.o: ../transform.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/my_visial_liller.dir/transform.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/my_visial_liller.dir/transform.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_visial_liller.dir/transform.c.o   -c /Users/bpole/CLionProjects/my_visial_liller/transform.c
 
 CMakeFiles/my_visial_liller.dir/transform.c.i: cmake_force
@@ -1164,7 +1151,7 @@ CMakeFiles/my_visial_liller.dir/transform.c.s: cmake_force
 
 CMakeFiles/my_visial_liller.dir/utils.c.o: CMakeFiles/my_visial_liller.dir/flags.make
 CMakeFiles/my_visial_liller.dir/utils.c.o: ../utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/my_visial_liller.dir/utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/my_visial_liller.dir/utils.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_visial_liller.dir/utils.c.o   -c /Users/bpole/CLionProjects/my_visial_liller/utils.c
 
 CMakeFiles/my_visial_liller.dir/utils.c.i: cmake_force
@@ -1259,7 +1246,6 @@ my_visial_liller_OBJECTS = \
 "CMakeFiles/my_visial_liller.dir/head_map.c.o" \
 "CMakeFiles/my_visial_liller.dir/main.c.o" \
 "CMakeFiles/my_visial_liller.dir/read_fight.c.o" \
-"CMakeFiles/my_visial_liller.dir/read_map.c.o" \
 "CMakeFiles/my_visial_liller.dir/render.c.o" \
 "CMakeFiles/my_visial_liller.dir/transform.c.o" \
 "CMakeFiles/my_visial_liller.dir/utils.c.o"
@@ -1349,13 +1335,12 @@ my_visial_liller: CMakeFiles/my_visial_liller.dir/ft_printf/parser.c.o
 my_visial_liller: CMakeFiles/my_visial_liller.dir/head_map.c.o
 my_visial_liller: CMakeFiles/my_visial_liller.dir/main.c.o
 my_visial_liller: CMakeFiles/my_visial_liller.dir/read_fight.c.o
-my_visial_liller: CMakeFiles/my_visial_liller.dir/read_map.c.o
 my_visial_liller: CMakeFiles/my_visial_liller.dir/render.c.o
 my_visial_liller: CMakeFiles/my_visial_liller.dir/transform.c.o
 my_visial_liller: CMakeFiles/my_visial_liller.dir/utils.c.o
 my_visial_liller: CMakeFiles/my_visial_liller.dir/build.make
 my_visial_liller: CMakeFiles/my_visial_liller.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Linking C executable my_visial_liller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bpole/CLionProjects/my_visial_liller/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Linking C executable my_visial_liller"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_visial_liller.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

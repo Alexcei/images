@@ -15,18 +15,29 @@ static void		rotate(t_dot *dot, double alpha, double beta)
 
 t_dot			transformations(t_dot dot, t_data *data)
 {
+	if (!data->head)
+		dot.z = 0;
 	dot.x -= (data->width - 1) / 2;
 	dot.y -= (data->height - 1) / 2;
 	dot.z -= (data->z_min + data->z_max) / 2;
 	if (data->camera->view_selection == TOP)
+	{
 		rotate(&dot, 0, 0);
+		data->camera->alpha = 0;
+		data->camera->beta = 0;
+	}
 	else if (data->camera->view_selection == ISO)
 	{
-		dot.x = (dot.x - dot.y) * cos(1);
-		dot.y = (dot.x + dot.y) * sin(1.1) - dot.z;
+		//data->camera->gamma = -1;
+		rotate(&dot, 0.82, 0.82);
+		data->camera->alpha = 0.82;
+		data->camera->beta = 0.82;
+		//dot.x = (dot.x - dot.y) * cos(1);
+		//dot.y = (dot.x + dot.y) * sin(1.1) - dot.z;
 	}
 	else if (data->camera->view_selection == FREE)
 		rotate(&dot, data->camera->alpha, data->camera->beta);
+	ft_printf("%f %f %f\n", data->camera->alpha, data->camera->beta, data->camera->gamma);
 	dot.x *= data->camera->zoom;
 	dot.y *= data->camera->zoom;
 	dot.x += data->camera->x_offset;

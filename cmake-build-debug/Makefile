@@ -2337,33 +2337,6 @@ read_fight.c.s:
 	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_fight.c.s
 .PHONY : read_fight.c.s
 
-read_map.o: read_map.c.o
-
-.PHONY : read_map.o
-
-# target to build an object file
-read_map.c.o:
-	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_map.c.o
-.PHONY : read_map.c.o
-
-read_map.i: read_map.c.i
-
-.PHONY : read_map.i
-
-# target to preprocess a source file
-read_map.c.i:
-	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_map.c.i
-.PHONY : read_map.c.i
-
-read_map.s: read_map.c.s
-
-.PHONY : read_map.s
-
-# target to generate assembly for a file
-read_map.c.s:
-	$(MAKE) -f CMakeFiles/my_visial_liller.dir/build.make CMakeFiles/my_visial_liller.dir/read_map.c.s
-.PHONY : read_map.c.s
-
 render.o: render.c.o
 
 .PHONY : render.o
@@ -2700,9 +2673,6 @@ help:
 	@echo "... read_fight.o"
 	@echo "... read_fight.i"
 	@echo "... read_fight.s"
-	@echo "... read_map.o"
-	@echo "... read_map.i"
-	@echo "... read_map.s"
 	@echo "... render.o"
 	@echo "... render.i"
 	@echo "... render.s"
